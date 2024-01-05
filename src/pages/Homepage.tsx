@@ -6,6 +6,11 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { IoDocumentAttach } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import LinkedInTooltip from "../components/LinkedIn/LinkedInTooltip";
+import GitHubTooltip from "../components/GitHub/GitHubTooltip";
+
+import MailTooltip from "../components/Mail/MailTooltip";
+import ResumeTooltip from "../components/Resume/ResumeTooltip";
 
 const comingSoonAllLanguages = [
   "Coming Soon",
@@ -48,21 +53,25 @@ const Homepage = () => {
         </TransitionGroup>
       </ComingSoonTextWrapper>
       <FooterLinkWrapper>
-        <Link
+        {/* <Link
           to="https://www.linkedin.com/in/manish-kumar-dev/"
           target="_blank"
         >
           <FaLinkedinIn size="2rem" cursor="pointer" />
-        </Link>
-        <Link to="https://github.com/Manish-kumar-DEV" target="_blank">
+        </Link> */}
+        <LinkedInTooltip />
+        {/* <Link to="https://github.com/Manish-kumar-DEV" target="_blank">
           <FaGithub size="2rem" cursor="pointer" />
-        </Link>
-        <Link to="mailto:manishkumardev17@gmail.com" target="_blank">
+        </Link> */}
+        <GitHubTooltip />
+        {/* <Link to="mailto:manishkumardev17@gmail.com" target="_blank">
           <MdOutlineMail size="2rem" cursor="pointer" />
-        </Link>
-        <a href={"/resume.pdf"} download="Manish-Kumar-SDE-Resume">
+        </Link> */}
+        <ResumeTooltip />
+        {/* <a href={"/resume.pdf"} download="Manish-Kumar-SDE-Resume">
           <IoDocumentAttach size="2rem" cursor="pointer" />
-        </a>
+        </a> */}
+        <MailTooltip />
       </FooterLinkWrapper>
     </HomepageWrapper>
   );
@@ -88,7 +97,7 @@ const ComingSoonTextWrapper = styled.div`
 
 const FooterLinkWrapper = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 25px;
 `;
 
 export default Homepage;
