@@ -1,0 +1,28 @@
+.comingSoonText{
+    font-size: 8vw;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+}
+
+.messageout-enter{
+    opacity: 0.01;
+    transform: translateX(0%);
+}
+
+.messageout-enter-active{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 100ms ease-in-out;
+}
+
+.messageout-exit{
+    opacity: 0;
+    transform: translateX(0%);
+}
+
+.messageout-exit-active{
+    opacity: 0;
+    transform: translateX(-10%);
+    transition: all 1000ms ease-in-out;
+}
