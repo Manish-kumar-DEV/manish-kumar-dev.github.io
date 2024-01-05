@@ -6,7 +6,6 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { IoDocumentAttach } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import resume from "/resume.pdf";
 
 const comingSoonAllLanguages = [
   "Coming Soon",
