@@ -1,31 +1,31 @@
-import "./ResumeTooltip.css";
+import styles from "./ResumeTooltip.module.css";
 const ResumeTooltip = () => {
   return (
-    <div className="tooltip-container">
-      <div className="tooltip">
-        <div className="profile">
-          <div className="user">
+    <div className={styles["tooltip-resume-container"]}>
+      <div className={styles["tooltip-resume"]}>
+        <div className={styles.profile}>
+          <div className={styles.user}>
             {/* <div className="img"></div> */}
-            <div className="details">
-              <div className="name">Manish Kumar</div>
-              <div className="username">Manish-Kumar-SDE-Resume</div>
+            <div className={styles.details}>
+              <div className={styles.name}>Manish Kumar</div>
+              <div className={styles.username}>Manish-Kumar-SDE-Resume</div>
             </div>
           </div>
-          <div className="about">Download</div>
+          <div className={styles.about}>Download</div>
         </div>
       </div>
-      <div className="text">
+      <div className={styles.text}>
         <a
-          className="icon"
+          className={styles.icon}
           href="/resume.pdf"
           download="Manish-Kumar-SDE-Resume"
         >
-          <div className="layer">
+          <div className={styles.layer}>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            <span className="fab fa-linkedin">
+            <span className={styles.fab}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 64 64"
@@ -37,7 +37,7 @@ const ResumeTooltip = () => {
               </svg>
             </span>
           </div>
-          <div className="text">Resume</div>
+          <div className={styles.text}>Resume</div>
         </a>
       </div>
     </div>

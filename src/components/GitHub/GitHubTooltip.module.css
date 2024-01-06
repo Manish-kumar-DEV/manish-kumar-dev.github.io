@@ -1,4 +1,4 @@
-.tooltip-container {
+.tooltip-github-container {
     position: relative;
     /* cursor: pointer; */
     transition: all 0.2s;
@@ -7,7 +7,7 @@
     
   }
   
-  .tooltip {
+  .tooltip-github {
     position: absolute;
     top: 0;
     left: 50%;
@@ -31,9 +31,9 @@
     border: 1px solid #646cff;
   }
   
-  .tooltip-container:hover .tooltip {
+  .tooltip-github-container:hover .tooltip-github {
     top: -150px;
-    left: 115px;
+    left: 67px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -47,8 +47,8 @@
     position: relative;
   }
   .layer {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     transition: transform 0.3s;
   }
   .icon:hover .layer {
@@ -71,7 +71,6 @@
     border-color: #646cff;
   }
   
- 
   .icon .text {
     position: absolute;
     left: 50%;
@@ -108,7 +107,7 @@
   
   .layer span.fab {
     font-size: 30px;
-    line-height: 64px;
+    line-height: 57px;
     text-align: center;
     fill: #646cff;
     background: #000;

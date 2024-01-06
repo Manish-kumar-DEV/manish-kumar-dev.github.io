@@ -1,13 +1,12 @@
-.tooltip-github-container {
+.tooltip-container {
     position: relative;
     /* cursor: pointer; */
     transition: all 0.2s;
     font-size: 17px;
     border-radius: 10px;
-    
   }
   
-  .tooltip-github {
+  .tooltip {
     position: absolute;
     top: 0;
     left: 50%;
@@ -18,10 +17,6 @@
     transition: all 0.3s;
     border-radius: 15px;
     min-width: 300px;
-    /* box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1); */
-
   }
   
   .profile {
@@ -31,9 +26,9 @@
     border: 1px solid #646cff;
   }
   
-  .tooltip-github-container:hover .tooltip-github {
+  .tooltip-container:hover .tooltip {
     top: -150px;
-    left: 40px;
+    left: 148px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -47,8 +42,8 @@
     position: relative;
   }
   .layer {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     transition: transform 0.3s;
   }
   .icon:hover .layer {
@@ -71,6 +66,7 @@
     border-color: #646cff;
   }
   
+ 
   .icon .text {
     position: absolute;
     left: 50%;
@@ -107,10 +103,11 @@
   
   .layer span.fab {
     font-size: 30px;
-    line-height: 64px;
+    line-height: 57px;
     text-align: center;
     fill: #646cff;
     background: #000;
+ 
   }
   .user {
     display: flex;

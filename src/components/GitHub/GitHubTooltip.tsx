@@ -1,32 +1,32 @@
-import "./GitHubTooltip.css";
+import styles from "./GitHubTooltip.module.css";
 
 const GitHubTooltip = () => {
   return (
-    <div className="tooltip-github-container">
-      <div className="tooltip-github">
-        <div className="profile">
-          <div className="user">
-            <div className="img"></div>
-            <div className="details">
-              <div className="name">Manish Kumar</div>
-              <div className="username">@Manish-kumar-DEV</div>
+    <div className={styles["tooltip-github-container"]}>
+      <div className={styles["tooltip-github"]}>
+        <div className={styles.profile}>
+          <div className={styles.user}>
+            <div className={styles.img}></div>
+            <div className={styles.details}>
+              <div className={styles.name}>Manish Kumar</div>
+              <div className={styles.username}>@Manish-kumar-DEV</div>
             </div>
           </div>
-          <div className="about">83 Followers</div>
+          <div className={styles.about}>83 Followers</div>
         </div>
       </div>
-      <div className="text">
+      <div className={styles.text}>
         <a
-          className="icon"
+          className={styles.icon}
           href="https://github.com/Manish-kumar-DEV"
           target="_blank"
         >
-          <div className="layer">
+          <div className={styles.layer}>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            <span className="fab fa-github">
+            <span className={styles["fab"]}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -39,7 +39,7 @@ const GitHubTooltip = () => {
               </svg>
             </span>
           </div>
-          <div className="text">GitHub</div>
+          <div className={styles.text}>GitHub</div>
         </a>
       </div>
     </div>

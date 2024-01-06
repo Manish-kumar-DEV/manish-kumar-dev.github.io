@@ -2,10 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import "./Homepage.css";
 import styled from "styled-components";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { MdOutlineMail } from "react-icons/md";
-import { IoDocumentAttach } from "react-icons/io5";
-import { Link } from "react-router-dom";
 import LinkedInTooltip from "../components/LinkedIn/LinkedInTooltip";
 import GitHubTooltip from "../components/GitHub/GitHubTooltip";
 
@@ -85,6 +81,7 @@ const HomepageWrapper = styled.div`
   min-height: 100vh;
   align-items: center;
   background-color: black;
+  overflow: hidden;
 `;
 
 const ComingSoonTextWrapper = styled.div`

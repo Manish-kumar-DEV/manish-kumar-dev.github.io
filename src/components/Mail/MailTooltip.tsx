@@ -1,32 +1,32 @@
-import "./MailTooltip.css";
+import styles from "./MailTooltip.module.css";
 
 const MailTooltip = () => {
   return (
-    <div className="tooltip-container">
-      <div className="tooltip">
-        <div className="profile">
-          <div className="user">
+    <div className={styles["tooltip-mail-container"]}>
+      <div className={styles["tooltip-mail"]}>
+        <div className={styles.profile}>
+          <div className={styles.user}>
             {/* <div className="img"></div> */}
-            <div className="details">
-              <div className="name">Manish Kumar</div>
-              <div className="username">manishkumardev17@gmail.com</div>
+            <div className={styles.details}>
+              <div className={styles.name}>Manish Kumar</div>
+              <div className={styles.username}>manishkumardev17@gmail.com</div>
             </div>
           </div>
-          <div className="about">Let's get in touch!</div>
+          <div className={styles.about}>Let's get in touch!</div>
         </div>
       </div>
-      <div className="text">
+      <div className={styles.text}>
         <a
-          className="icon"
+          className={styles.icon}
           href="mailto:manishkumardev17@gmail.com"
           target="_blank"
         >
-          <div className="layer">
+          <div className={styles.layer}>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            <span className="fab fa-linkedin">
+            <span className={styles.fab}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -38,7 +38,7 @@ const MailTooltip = () => {
               </svg>
             </span>
           </div>
-          <div className="text">Mail</div>
+          <div className={styles.text}>Mail</div>
         </a>
       </div>
     </div>
