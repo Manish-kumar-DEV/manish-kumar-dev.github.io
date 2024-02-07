@@ -7,6 +7,7 @@ import GitHubTooltip from "../components/GitHub/GitHubTooltip";
 
 import MailTooltip from "../components/Mail/MailTooltip";
 import ResumeTooltip from "../components/Resume/ResumeTooltip";
+import SkillsBubble from "../components/Skills-Bubble/SkillsBubble";
 
 const comingSoonAllLanguages = [
   "Coming Soon",
@@ -25,51 +26,37 @@ const Homepage = () => {
   const currentLanguageRef = useRef(0);
   const [comingSoonText, setComingSoonText] = useState("Loading");
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setComingSoonText(comingSoonAllLanguages[currentLanguageRef.current]);
-      currentLanguageRef.current === comingSoonAllLanguages.length - 1
-        ? (currentLanguageRef.current = 0)
-        : (currentLanguageRef.current += 1);
-    }, 3000);
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setComingSoonText(comingSoonAllLanguages[currentLanguageRef.current]);
+  //     currentLanguageRef.current === comingSoonAllLanguages.length - 1
+  //       ? (currentLanguageRef.current = 0)
+  //       : (currentLanguageRef.current += 1);
+  //   }, 3000);
 
-    return () => clearInterval(intervalId);
-  }, []);
+  //   return () => clearInterval(intervalId);
+  // }, []);
   return (
-    <HomepageWrapper>
-      <ComingSoonTextWrapper>
-        <TransitionGroup className="comingSoonText">
-          <CSSTransition
-            key={currentLanguageRef.current}
-            timeout={3000}
-            classNames="messageout"
-          >
-            <div>{comingSoonText}...</div>
-          </CSSTransition>
-        </TransitionGroup>
-      </ComingSoonTextWrapper>
-      <FooterLinkWrapper>
-        {/* <Link
-          to="https://www.linkedin.com/in/manish-kumar-dev/"
-          target="_blank"
-        >
-          <FaLinkedinIn size="2rem" cursor="pointer" />
-        </Link> */}
-        <LinkedInTooltip />
-        {/* <Link to="https://github.com/Manish-kumar-DEV" target="_blank">
-          <FaGithub size="2rem" cursor="pointer" />
-        </Link> */}
-        <GitHubTooltip />
-        {/* <Link to="mailto:manishkumardev17@gmail.com" target="_blank">
-          <MdOutlineMail size="2rem" cursor="pointer" />
-        </Link> */}
-        <ResumeTooltip />
-        {/* <a href={"/resume.pdf"} download="Manish-Kumar-SDE-Resume">
-          <IoDocumentAttach size="2rem" cursor="pointer" />
-        </a> */}
-        <MailTooltip />
-      </FooterLinkWrapper>
-    </HomepageWrapper>
+    <SkillsBubble />
+    //  <HomepageWrapper>
+    //   <ComingSoonTextWrapper>
+    //     <TransitionGroup className="comingSoonText">
+    //       <CSSTransition
+    //         key={currentLanguageRef.current}
+    //         timeout={3000}
+    //         classNames="messageout"
+    //       >
+    //         <div>{comingSoonText}...</div>
+    //       </CSSTransition>
+    //     </TransitionGroup>
+    //   </ComingSoonTextWrapper>
+    //   <FooterLinkWrapper>
+    //     <LinkedInTooltip />
+    //     <GitHubTooltip />
+    //     <ResumeTooltip />
+    //     <MailTooltip />
+    //   </FooterLinkWrapper>
+    // </HomepageWrapper>
   );
 };
 
