@@ -49,24 +49,12 @@ const Homepage = () => {
         </TransitionGroup>
       </ComingSoonTextWrapper>
       <FooterLinkWrapper>
-        {/* <Link
-          to="https://www.linkedin.com/in/manish-kumar-dev/"
-          target="_blank"
-        >
-          <FaLinkedinIn size="2rem" cursor="pointer" />
-        </Link> */}
         <LinkedInTooltip />
-        {/* <Link to="https://github.com/Manish-kumar-DEV" target="_blank">
-          <FaGithub size="2rem" cursor="pointer" />
-        </Link> */}
+
         <GitHubTooltip />
-        {/* <Link to="mailto:manishkumardev17@gmail.com" target="_blank">
-          <MdOutlineMail size="2rem" cursor="pointer" />
-        </Link> */}
+
         <ResumeTooltip />
-        {/* <a href={"/resume.pdf"} download="Manish-Kumar-SDE-Resume">
-          <IoDocumentAttach size="2rem" cursor="pointer" />
-        </a> */}
+
         <MailTooltip />
       </FooterLinkWrapper>
     </HomepageWrapper>
